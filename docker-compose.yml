@@ -1,0 +1,14 @@
+---
+version: '3.4'
+services:
+  zips:
+    image: zips:latest
+    init: true
+    environment:
+      LIGHTSTEP_SERVICE: "${LIGHTSTEP_SERVICE}"
+      LIGHTSTEP_TOKEN: "${LIGHTSTEP_TOKEN}"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports: 
+      - "5000:5000"
