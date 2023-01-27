@@ -1,7 +1,7 @@
 docker_compose('./docker-compose.yml')
-docker_build('zips:latest', '.', 
+docker_build('flaskboilerplate:latest', '.', 
   ignore=[],
   live_update = [
-    sync('./', '/zips'),
+    sync('./', '/app'),
     restart_container()
   ])

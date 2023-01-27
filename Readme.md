@@ -1,5 +1,5 @@
-# python zips api
-small flask api for fetching info about zip codes
+# python flask boilerplate
+barebones boilerplate for flask/docker/tilt (local livedev utility)
 
 # reqs
 - docker
@@ -20,6 +20,5 @@ in the terminal with tilt running, press t to get a cli UI. you can expand the l
 you can also go to locahost:10350 to get a browser GUI.
 
 # routes
-- localhost:5000/<zipcode> will return a jinja templated html page with zip and city. the jinja template here is in templates/root.html
-- localhost:5000/zips/<zipcode> will return json with the full zip metadata dict
-- localhost:5000/zips will (slowly) return the full zips dict
+- localhost:5001 will return a jinja templated html page.
+- localhost:5000/hello/somename will return a string concatenating the "name" param with "hi!"
